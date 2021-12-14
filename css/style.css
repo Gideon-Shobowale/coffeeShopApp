@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: 200px auto;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1px;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  -webkit-box-shadow: 0px 0px 8px 0px #e6e6e6;
+          box-shadow: 0px 0px 8px 0px #e6e6e6;
+  line-height: 90px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #fff;
+}
+
+.item1 {
+  text-align: center;
+  color: #000;
+  font-family: Segoe UI;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 20px 20px 0 0;
+}
+
+.item2 {
+  display: -ms-grid;
+  display: grid;
+  gap: 5px;
+  margin: auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.item3 {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+  margin: auto;
+  -ms-grid-columns: 54px 54px 54px 30px 64px;
+      grid-template-columns: 54px 54px 54px 30px 64px;
+}
+
+.item4 {
+  padding: 20px;
+}
+
+.item5 {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.item6 {
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.item7 {
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  background-color: #F3F3F3;
+}
+
+.image {
+  width: 60px;
+  margin-top: 15px;
+  background-color: transparent;
+}
+
+.price {
+  font-weight: normal;
+  font-size: 1.5em;
+  background-color: transparent;
+  font-family: Segoe UI;
+}
+
+#one {
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border: none;
+  font-weight: bold;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #33cccc;
+  -webkit-box-shadow: 2px 2px 3px 0px #e6e6e6;
+          box-shadow: 2px 2px 3px 0px #e6e6e6;
+}
+
+#one:hover {
+  cursor: pointer;
+  background-color: #adebeb;
+}
+
+#two {
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border: none;
+  font-weight: bold;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #33cccc;
+  -webkit-box-shadow: 2px 2px 3px 0px #e6e6e6;
+          box-shadow: 2px 2px 3px 0px #e6e6e6;
+}
+
+#two:hover {
+  cursor: pointer;
+  background-color: #adebeb;
+}
+
+#three {
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border: none;
+  font-weight: bold;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #33cccc;
+  -webkit-box-shadow: 2px 2px 3px 0px #e6e6e6;
+          box-shadow: 2px 2px 3px 0px #e6e6e6;
+}
+
+#three:hover {
+  cursor: pointer;
+  background-color: #adebeb;
+}
+
+.middleText {
+  line-height: 95px;
+  margin: -20px auto;
+  font-weight: 500;
+  font-size: 1.2em;
+  background-color: transparent;
+  font-family: Segoe UI;
+}
+
+#a-choice {
+  width: 60px;
+  text-align: center;
+  outline: none;
+  border: 2px solid #adebeb;
+  border-radius: 6px 6px 6px 6px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#your-name {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  height: 30px;
+  width: 280px;
+  outline: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #F3F3F3;
+  font-weight: 500;
+  font-family: Segoe UI;
+}
+
+#your-name:focus {
+  border: 1px solid #33cccc;
+}
+
+#message {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  height: 90px;
+  width: 280px;
+  resize: none;
+  outline: none;
+  border: 1px solid #e6e6e6;
+  background-color: #F3F3F3;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: 500;
+  font-family: Segoe UI;
+}
+
+#message:focus {
+  border: 1px solid #33cccc;
+}
+
+#bnw {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #33cccc;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Segoe UI;
+  cursor: pointer;
+}
+
+#bnw:hover {
+  background-color: #adebeb;
+}
+
+#incre {
+  background-color: transparent;
+}
+
+.btnLink {
+  color: #000;
+  padding: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 50px 50px 50px 50px;
+  text-decoration: none;
+  background-color: #fff;
+  font-family: Segoe UI;
+}
+/*# sourceMappingURL=style.css.map */
