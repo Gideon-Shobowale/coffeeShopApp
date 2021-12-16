@@ -1,28 +1,28 @@
+// coffeshop by Gidoen Shobowale 
 const symbole = "£";
-
-let count = 1;
-let secondCount = 2;
-let newCount = count;
-let secCount = secondCount;
-
-
-do{
-    newCount = newCount * 5;
-}   while (newCount < 1);
-
-do{
-    secCount = secCount * 5;
-}   while (secondCount < 1);
-
-
-
-
-const firstValue = () => {
-    document.getElementById("incre").innerHTML = `${symbole}${newCount}`;
+const price = [1, 2, 3, 4, 5];
+const newPrice = []; // [5, 10, 15....]
+// Calculation for new price 
+for (let i = 0; i < 5; i++){
+    if (price) {
+        let count = price[i] * 5;
+        newPrice.push(count);
+    }
 };
-document.getElementById("one").addEventListener("click", firstValue);
+const firstClick = () => {
+    document.getElementById("incre").innerHTML = `${symbole}` + newPrice[0];
+}
+document.getElementById("one").addEventListener("click", firstClick);
 
-const secondValue = () => {
-    document.getElementById("incre").innerHTML = `${symbole}${secCount}`;
-};
-document.getElementById("two").addEventListener("click", secondValue);
+const secondClick = () => {
+    document.getElementById("incre").innerHTML = `${symbole}` + newPrice[1];
+}
+document.getElementById("two").addEventListener("click", secondClick);
+
+const thirdClick = () => {
+    document.getElementById("incre").innerHTML = `${symbole}` + newPrice[2];
+}
+document.getElementById("three").addEventListener("click", thirdClick);
+
+
+console.log(newPrice);
