@@ -1,7 +1,7 @@
 // coffeshop by Gidoen Shobowale 
-const symbole = "£";
-const price = [1, 2, 3, 4, 5];
-const newPrice = []; // [5, 10, 15....]
+let symbole = "£";
+const price = [1, 2, 3];
+const newPrice = []; // [5, 10, 15]
 // Calculation for new price 
 for (let i = 0; i < 5; i++){
     if (price) {
@@ -24,5 +24,9 @@ const thirdClick = () => {
 }
 document.getElementById("three").addEventListener("click", thirdClick);
 
+// Get value from user input and multiply it by 5
+const someNumber = () => {
+    let num = document.getElementById("a-choice").value * 5;
+    document.getElementById("incre").innerHTML = `${symbole}` + num;
+};
 
-console.log(newPrice);
