@@ -5,10 +5,99 @@
     padding: 0;
     background-color: $myWhite;
 }
+.outer-container{
+    width: 350px;
+    position: absolute;
+    height: 625px;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(34, 33, 33, 0.616);
+    backdrop-filter: blur(8px);
+    display: none;
+}
+.outer-grid-container{
+    width: 300px;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin: 100px auto;
+    position: relative;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: auto auto auto auto;
+    line-height: 50px;
+    border-radius: 20px 20px 20px 20px;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 250px;
+    line-height: 22px;
+    text-align: center;
+    color: $myBlack;
+    font-weight: bold;
+    font-size: 30px;
+    color: $myWhite;
+    background-color: #33cccc;
+    border-radius: 60px 60px 60px 60px;
+    cursor: pointer;
+}
+.gesture{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: $myFontFamily;
+}
+.message{
+    text-align: center;
+    font-size: 1.1em;
+    font-family: $myFontFamily;
+}
+.email{
+    padding: 10px;
+}
+#your-email{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    height: 30px;
+    width: 260px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px 5px 5px 5px;
+    background-color: $myBackgroundColor;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $myFontFamily;
+}
+#your-email:focus{
+    border: 1px solid #33cccc;
+}
+.pay-info{
+    color: rgb(107, 107, 107);
+    text-align: center;
+    font-size: 1em;
+    font-family: $myFontFamily;
+    padding-bottom: 10px;
+}
+#pay-type{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 280px;
+    height: 50px;
+    color: $myWhite;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #33cccc;
+    font-size: 1.3em;
+    font-weight: $myFontWeight;
+    font-family: $myFontFamily;
+    cursor: pointer;
+}
 .container{
     width: 350px;
     height: auto;
-    display: block;
     margin: 200px auto;
 }
 .grid-container{
@@ -18,7 +107,6 @@
     box-shadow:0px 0px 8px 0px $myGrey;
     line-height: 90px;
     border-radius: 20px 20px 20px 20px;
-    background-color: $myWhite;
 }
 .item1{
     text-align: $myText;
@@ -139,6 +227,7 @@ input::-webkit-inner-spin-button{
     border: 1px solid #e6e6e6;
     border-radius: 5px 5px 5px 5px;
     background-color: $myBackgroundColor;
+    font-size: 16px;
     font-weight: 500;
     font-family: $myFontFamily;
 }
@@ -156,6 +245,7 @@ input::-webkit-inner-spin-button{
     border: 1px solid #e6e6e6;
     background-color: $myBackgroundColor;
     border-radius: 5px 5px 5px 5px;
+    font-size: 16px;
     font-weight: 500;
     font-family: $myFontFamily;
 }

@@ -28,5 +28,16 @@ document.getElementById("three").addEventListener("click", thirdClick);
 const someNumber = () => {
     let num = document.getElementById("a-choice").value * 5;
     document.getElementById("incre").innerHTML = `${symbole}` + num;
-};
+}
 
+// Open modal
+const openBtn = () => {
+    document.getElementById("openModal").style.display = "block";
+}
+document.getElementById("bnw").addEventListener("click", openBtn);
+// Close and reset modal
+const closeBtn = () => {
+    document.getElementById("openModal").style.display = "none";
+    document.getElementById("your-email").value = '';
+}
+document.getElementById("closeModal").addEventListener("click", closeBtn);

@@ -4,10 +4,112 @@
   background-color: #fff;
 }
 
+.outer-container {
+  width: 350px;
+  position: absolute;
+  height: 625px;
+  border-radius: 20px 20px 0px 0px;
+  background: rgba(34, 33, 33, 0.616);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  display: none;
+}
+
+.outer-grid-container {
+  width: 300px;
+  padding: 10px;
+  padding-bottom: 30px;
+  margin: 100px auto;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  line-height: 50px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  margin-top: 8px;
+  margin-left: 250px;
+  line-height: 22px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  background-color: #33cccc;
+  border-radius: 60px 60px 60px 60px;
+  cursor: pointer;
+}
+
+.gesture {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+  font-family: Segoe UI;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.1em;
+  font-family: Segoe UI;
+}
+
+.email {
+  padding: 10px;
+}
+
+#your-email {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  height: 30px;
+  width: 260px;
+  outline: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #F3F3F3;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Segoe UI;
+}
+
+#your-email:focus {
+  border: 1px solid #33cccc;
+}
+
+.pay-info {
+  color: #6b6b6b;
+  text-align: center;
+  font-size: 1em;
+  font-family: Segoe UI;
+  padding-bottom: 10px;
+}
+
+#pay-type {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 280px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #33cccc;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: Segoe UI;
+  cursor: pointer;
+}
+
 .container {
   width: 350px;
   height: auto;
-  display: block;
   margin: 200px auto;
 }
 
@@ -21,7 +123,6 @@
           box-shadow: 0px 0px 8px 0px #e6e6e6;
   line-height: 90px;
   border-radius: 20px 20px 20px 20px;
-  background-color: #fff;
 }
 
 .item1 {
@@ -168,6 +269,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #e6e6e6;
   border-radius: 5px 5px 5px 5px;
   background-color: #F3F3F3;
+  font-size: 16px;
   font-weight: 500;
   font-family: Segoe UI;
 }
@@ -187,6 +289,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #e6e6e6;
   background-color: #F3F3F3;
   border-radius: 5px 5px 5px 5px;
+  font-size: 16px;
   font-weight: 500;
   font-family: Segoe UI;
 }

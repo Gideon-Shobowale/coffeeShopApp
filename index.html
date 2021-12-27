@@ -8,6 +8,16 @@
 </head>
 <body>
     <div class="container">
+        <div class="outer-container" id="openModal">
+            <div class="outer-grid-container">
+                <div class="close" id="closeModal">&times</div>
+                <div class="gesture">Thank you</div>
+                <div class="message">You'll be charged <span id="checkout"></span></div>
+                <div class="email"><input type="email" id="your-email" name="email" placeholder="Email"></div>
+                <div class="pay-info">- PAY WITH -</div>
+                <button id="pay-type" onclick="history.go(0)">PayPal</button>
+            </div>
+        </div>
         <div class="grid-container">
             <div class="item1">Buy coffee for a friend</div>
             <div class="item2">
@@ -22,10 +32,10 @@
                 <input type="number" id="a-choice" name="number" oninput="someNumber()">
             </div>
             <div class="item4">
-                <input type="text" id="your-name" name="name"  placeholder="Name">
+                <input type="text" id="your-name" name="name" placeholder="Name">
             </div>
             <div class="item5">
-                <textarea type="text" id="message" name="name"  placeholder="Say something..."></textarea>
+                <textarea type="text" id="message" name="name" placeholder="Say something nice..."></textarea>
             </div>
             <div class="item6">
                 <button id="bnw">Buy Now <span id="incre"></span></button>
