@@ -1,7 +1,8 @@
 // coffeshop by Gidoen Shobowale 
 let symbole = "£";
-const price = [1, 2, 3];
-const newPrice = []; // [5, 10, 15]
+let price = [1, 2, 3];
+let newPrice = []; // [5, 10, 15]
+let checkoutPrice = '';
 // Calculation for new price 
 for (let i = 0; i < 5; i++){
     if (price) {
@@ -10,26 +11,25 @@ for (let i = 0; i < 5; i++){
     }
 };
 const firstClick = () => {
-    document.getElementById("incre").innerHTML = `${symbole}` + newPrice[0];
+    checkoutPrice = document.getElementById("incre").innerHTML = `${symbole}` + newPrice[0];
 }
 document.getElementById("one").addEventListener("click", firstClick);
 
 const secondClick = () => {
-    document.getElementById("incre").innerHTML = `${symbole}` + newPrice[1];
+    checkoutPrice = document.getElementById("incre").innerHTML = `${symbole}` + newPrice[1];
 }
 document.getElementById("two").addEventListener("click", secondClick);
 
 const thirdClick = () => {
-    document.getElementById("incre").innerHTML = `${symbole}` + newPrice[2];
+    checkoutPrice = document.getElementById("incre").innerHTML = `${symbole}` + newPrice[2];
 }
 document.getElementById("three").addEventListener("click", thirdClick);
 
 // Get value from user input and multiply it by 5
 const someNumber = () => {
     let num = document.getElementById("a-choice").value * 5;
-    document.getElementById("incre").innerHTML = `${symbole}` + num;
+    checkoutPrice = document.getElementById("incre").innerHTML = `${symbole}` + num;
 }
-
 // Open modal
 const openBtn = () => {
     document.getElementById("openModal").style.display = "block";
@@ -41,3 +41,8 @@ const closeBtn = () => {
     document.getElementById("your-email").value = '';
 }
 document.getElementById("closeModal").addEventListener("click", closeBtn);
+// Checkout price
+const checkOut = () => {
+    document.getElementById("checkout").innerHTML = checkoutPrice;
+}
+document.getElementById("bnw").addEventListener("click", checkOut);
