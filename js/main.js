@@ -9,26 +9,27 @@ for (let i = 0; i < 5; i++){
         let count = price[i] * 5;
         newPrice.push(count);
     }
+    console.log(newPrice[i]);
 };
 const firstClick = () => {
-    checkoutPrice = document.getElementById("incre").innerHTML = `${symbole}` + newPrice[0];
+    checkoutPrice = document.getElementById("incre").textContent = `${symbole}` + newPrice[0];
 }
 document.getElementById("one").addEventListener("click", firstClick);
 
 const secondClick = () => {
-    checkoutPrice = document.getElementById("incre").innerHTML = `${symbole}` + newPrice[1];
+    checkoutPrice = document.getElementById("incre").textContent = `${symbole}` + newPrice[1];
 }
 document.getElementById("two").addEventListener("click", secondClick);
 
 const thirdClick = () => {
-    checkoutPrice = document.getElementById("incre").innerHTML = `${symbole}` + newPrice[2];
+    checkoutPrice = document.getElementById("incre").textContent = `${symbole}` + newPrice[2];
 }
 document.getElementById("three").addEventListener("click", thirdClick);
 
 // Get value from user input and multiply it by 5
 const someNumber = () => {
     let num = document.getElementById("a-choice").value * 5;
-    checkoutPrice = document.getElementById("incre").innerHTML = `${symbole}` + num;
+    checkoutPrice = document.getElementById("incre").textContent = `${symbole}` + num;
 }
 // Open modal
 const openBtn = () => {
@@ -43,6 +44,6 @@ const closeBtn = () => {
 document.getElementById("closeModal").addEventListener("click", closeBtn);
 // Checkout price
 const checkOut = () => {
-    document.getElementById("checkout").innerHTML = checkoutPrice;
+    document.getElementById("checkout").textContent = checkoutPrice;
 }
 document.getElementById("bnw").addEventListener("click", checkOut);
